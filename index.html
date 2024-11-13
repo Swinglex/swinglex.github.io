@@ -6,54 +6,54 @@
     <title>My Personal Online Resume</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body>
-    <!--Header-->
-    <header class="column">
+<body class="bg-dark text-light">
+    <header class="container text-center py-5">
         <h1>Alex Cassady</h1>
-        <!--just changed this from a png to a svg-->
-        <img src="images/HANDSOMEmannnnnn.svg" alt="Picture of Alex">
+        <img src="images/HANDSOMEmannnnnn.svg" alt="Picture of Alex" class="img-fluid my-3" style="max-width: 200px;">
     </header>
-    <main class="column">
-        <!--I dont use the classes in these but I put them in just because-->
-        <!--Work-->
-        <section class="work">
-            <h1>Work Experience</h1> 
-            <h2>Grocery Clerk | Fareway Inc.</h2>
-            <h3>2023-Present</h3>
-            <p>Responsible for the stocking of store items and ensuring that customers have the most fantastic shopping experience by answering their questions, carrying out their groceries, and putting their needs first.</p>
 
-            <h2>Crew Member | McDonald's Corp.</h2>
-            <h3>2021-2022</h3>
-            <p>Ensuring a welcoming customer reception, precision in order-taking, and impeccable food service, prioritizing both speed and quality.</p>
-
+    <main class="container">
+        <section class="my-5">
+            <h2 class="text-center mb-4">Work Experience</h2> 
+            <div class="card mb-3 bg-secondary text-white">
+                <div class="card-body">
+                    <h3>Grocery Clerk | Fareway Inc.</h3>
+                    <p>2023-2024</p>
+                    <p>Responsible for the stocking of store items and ensuring that customers have the most fantastic shopping experience by answering their questions, carrying out their groceries, and putting their needs first.</p>
+                </div>
+            </div>
+            <div class="card bg-secondary text-white">
+                <div class="card-body">
+                    <h3>Meat Clerk | Fareway Inc.</h3>
+                    <p>2024-Present</p>
+                    <p>I pack meat lol</p>
+                </div>
+            </div>
         </section>   
-        <!--Education-->
-        <section class="edu">
-            <h1>Education</h1>
-            <h2>Indian Hills Community College</h2>
-            <h3>2023 - 2025</h3>
-            <p>Computer Software Development</p>
+
+        <section class="my-5">
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="card bg-secondary text-white">
+                <div class="card-body">
+                    <h3>Indian Hills Community College</h3>
+                    <p>2023 - 2025</p>
+                    <p>Computer Software Development</p>
+                </div>
+            </div>
         </section>
 
-        <section class="aboutme">
-            <h1>About Me</h1>
+        <section class="my-5">
+            <h2 class="text-center mb-4">About Me</h2>
             <p>Hello, I'm Alex, an experienced programmer with a three-year track record in programming. My expertise spans languages such as HTML, CSS, Java, COBOL, and Python. I am currently pursuing a degree in Computer Software Development at Indian Hills with an emphasis in web development. Other than my professionalism I also love, football, video games, hiking, and woodworking.</p>
         </section>
-
-
     </main> 
 
-    <!--Footer-->
-    <footer>
-        <h1>Contact Me :)</h1>
-        <div>
-            <h3><i class="fas fa-globe"></i> My website</h3>
-            <a href="https://alexcassady.com">alexcassady.com</a>
-                 
-            <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/alex-cassady-a49817293/">linkedin.com/in/alex-cassady</a>
-        </div> 
+    <footer class="container text-center py-4 bg-dark text-light">
+        <h2>Contact Me :)</h2>
+        <p><i class="fas fa-globe"></i> <a href="https://alexcassady.com" class="text-info">alexcassady.com</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/alex-cassady-a49817293/" class="text-info">linkedin.com/in/alex-cassady</a></p>
     </footer>
 </body>
 </html>

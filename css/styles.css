@@ -1,28 +1,13 @@
-/*palette for this project.
-Bright Purple #BF40BF
-Violet #7F00FF
-Iris #5D3FD3
-Dark Purple #301934
-Burgundy #800020 -weird purple red thing, but i have an idea with it
-White #fff
-*/
-
-/*Custom font*/
-
-/*global stufff, which is most of the page*/
-
-/*added animation and svg file, removed any old unnecessary notes*/
-@font-face {
-    font-family: 'getPixeled';
-    src: url('../fonts/PixeloidSans.ttf') format('woff2');
-}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css');
 
 body {
-    font-family: 'getPixeled', Arial, Helvetica, sans-serif;
-    margin: 3%;
     background-color: #0f0111;
     color: #c7c2c2;
-    line-height: 40px;
+    font-family: 'getPixeled', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #fff;
 }
 
 a {
@@ -34,131 +19,20 @@ a:hover {
     color: #fff;
 }
 
-/* CSS animation 
-   Checked out this stack overflow on actually how to get the spin to work
-   https://stackoverflow.com/questions/14859322/css3-spin-animation*/
+img:hover {
+    animation: spin 2s linear infinite; 
+}
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-img:hover {
-    animation: spin 2s linear infinite; 
-}
-
-
-
-a:active {
-    color: #BF40BF;
-}
-
-p {
-    font-size: 20px;
-}
-
-p::first-line {
-    background-color: #7F00FF;
-    color: white;
-    padding: 4px;
-}
-
-h1 {
-    font-size: 33px;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h2,
-p {
-    font-weight: 400;
-    text-align: start;
-}
-
-/*Header*/
-
-header {
+.card {
     background-color: #5d3fd3;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    float: left;
-    position: relative;
-    top: 400px;
-    box-sizing: content-box;
-    background: linear-gradient(to left, #BF40BF, #7F00FF);
-
 }
 
-header h2 {
-    color: #fff; 
-}
-
-header, img {
-    max-width: 40%;
-    display: flex;
-    gap: 90%;
-}
-
-/*Main content*/
-
-main {
-    margin: 1%;
-    padding: 1%;
-    background-color: #7f00ff;
-    overflow: hidden;
-}
-
-/* Footer */
-
-footer {
-    background-color: #5d3fd3;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-.column {
-    width: 55%;
-    float: center; 
-    margin: 1%;
-}
-
-/* this i have to buff out */
-@media only screen and (max-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-
-    header {
-        top: 200px;
-    }
-
-    .column {
-        width: 50%;
-    }
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: 20px;
-    }
-
-    header {
-        top: 300px;
-    }
-}
-
-
-@media only screen and (min-width: 1200px) {
-    body {
-        font-size: 22px;
-    }
-
-    header {
-        top: 500px;
-    }
+.container {
+    max-width: 800px;
+    margin: auto;
 }
